@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Despesas Pessoais</title>
+    <link rel="stylesheet" href="despesas.css">
+</head>
+<body>
+    
+
+    <div class="container">
+      <!------ INICIO LISTA DE RECEITA ---->
+    <div class="incluir">
+         <div class="incluir-despesas">
+               <h2>Receitas</h2>
+              <ul id="list-receita" class="listConstas"> </ul>
+               <div>
+                  <button class="add" id="add-receita"> + </button>  
+                  <span id="total-receitas">Total: R$0,00</span>
+               </div>
+            </div>
+    </div>
+      <!------ FIM  LISTA DE  RECEITA ---->
+
+      <!------ INICIO LISTA DE  DESPESA ---->
+        <div class="incluir">
+          <div class="incluir-despesas">
+                 <h2>Despesas</h2>
+                 <ul id="list-despesa" class="listContas">  </ul>
+                 <div>
+                    <button class="add" id="add-despesa"> + </button>
+                    <span id="total-despesas">Total: R$0,00</span> 
+                 </div>
+          </div>  
+        </div>
+       <!------ FIM LISTA DE  DESPESA ---->
+       <div class="incluir">
+        <div class="incluir-despesas balanco">
+               <h2>Balanço</h2>
+                  <div class="block-balance lucro">
+                    <span id="balance-receitas">Total de Receitas: R$0,00</span>
+                  </div>
+                  <div class="block-balance contas">
+                    <span id="balance-despesas">Total de despesas: R$0,00</span> 
+                  </div>
+               <div class="block-balance situation">
+                <span id="balance-situation">Total: R$0,00</span> 
+               </div>
+        </div>  
+      </div>
+
+
+    </div>
+
+    <!------ INICIO MODAL INCLUIR DESPESA ---->
+    <div class="bg-modal" id="modal-despesas">
+        <div class="modal">
+            <span class="close" id="close">
+                  &times;
+            </span>
+           <div class="form">        
+              <h2>Incluir Despesas</h2>
+               <div class="inputs">
+                   <fieldset>
+                           <input type="text" placeholder="Nome" id="nome-despesa"> <br>
+                           <input type="number" placeholder="Total a Pagar" id="valor-despesa">                               
+                           <button id="cadastrar-despesa" >Cadastrar</button>
+                   </fieldset>    
+                </div>
+              </div>
+        </div>     
+   </div>
+    <!------ FIM MODAL INCLUIR DESPESA ---->
+
+     <!------ INICIO MODAL INCLUIR RECEITA ---->
+     <div class="bg-modal" id="modal-receitas">
+        <div class="modal">
+              <span class="close" id="close-receitas">
+                  &times;
+              </span>
+               <div class="form">
+                     <h2>Incluir Receitas</h2>
+                      <div class="inputs">
+                          <fieldset>
+                              <input type="text" placeholder="Nome" id="nome-receita"> <br>
+                              <input type="number" placeholder="Total a Pagar" id="valor-receita"> 
+                              <button id="cadastrar-receita" >Cadastrar</button>  
+                          </fieldset> 
+                      </div>
+                  </div>
+         </div>       
+   </div>
+    <!------ FIM MODAL INCLUIR RECEITA ---->
+
+   
+<script src="despesas.js"></script>
+</body>
+</html>

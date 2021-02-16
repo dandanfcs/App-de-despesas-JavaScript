@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;   
+    font-weight: 400; 
+}
+.add{
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    background-color: #464646;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 3px 3px 3px #d036da;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+}
+.add:hover{
+    transform: scale(1.1);
+}
+
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  display: none;
+  transition: 1.8s;
+}
+
+.modal{
+    width: 40%;
+    height: 60%;
+    box-shadow: 3px 3px 3px #B83ACC;
+    background-color:  #222222;
+    margin: 80px auto 0px auto;
+}
+.modal .close{
+    float: right;
+    font-size: 35px;
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    background-color: #B83ACC ;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-width: 90%;
+   
+}
+.form h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.inputs input{
+    border: none;
+  margin-top: 20px;
+  padding: 14px 10px;
+  width: 250px;
+  height: 35px;
+  background: none;
+  font-size: 17px;
+  font-weight: 900;
+  color: white;
+  border: 2px solid purple;
+  text-align: center;
+  border-radius: 24px;
+  transition: 0.5s;
+}
+.inputs input:hover{
+    width: 280px;
+    border: 2px solid rgb(57, 223, 98);
+}
+.inputs fieldset{
+    border: none;
+    margin-top: 40px;
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs button{
+    background: none;
+    display: block;
+    float: right;
+    padding: 12px;
+    border: 2px solid purple;
+    color: rgb(255, 255, 255);
+    width: 30%;
+    border-radius: 24px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+.inputs button:hover{
+    background-color: #ad249b;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+/*------------------------- FIM JANELA MODAL --------------------*/
+.container{
+    height: 100vh;
+    display: flex;
+    background-color: #252525;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container h1{
+    text-align: center;
+    color: white;
+}
+.incluir{
+    display: flex;
+    flex-direction: row;
+}
+
+.incluir-despesas{
+    width: 400px;
+    height: 500px;
+    background-color: #383838;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+   
+    color:#ffffff;
+    box-shadow: 5px 5px 5px #B83ACC;
+}
+.incluir-despesas h2{
+    background-color: transparent;
+    text-align: center;
+   
+}
+
+.block-balance{
+    text-align: center;
+    font-size: 20px;
+    height: 20%;
+    width: 60%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.lucro{
+    background-color: rgb(55, 206, 35);
+}
+.contas{
+    background-color: rgb(231, 51, 27);
+}
+.situation{
+    background-color: rgb(221, 170, 31);
+    margin-bottom: 10px;
+}
+.balanco{
+   align-items: center;
+}
+
+.incluir-input button{   
+     width: 30%;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: 700;
+    background-color: #3da5dc;
+    color: white;
+    box-shadow: 2px 1px 1px #737272;
+    border: 1px solid gray;
+}
+.incluir-despesas{
+    overflow: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.incluir-despesas ul{
+    list-style: none;
+    margin-bottom: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 300;
+    overflow: auto;
+}
+.incluir-despesas ul::-webkit-scrollbar{
+    background-color:#504d50;
+    color: #B83ACC;
+
+ }
+ .incluir-despesas ul::-webkit-slider-thumb {
+    background-color: #B83ACC;
+ }
+
+.incluir-despesas ul li{
+    padding: 5px;
+    font-weight: 900;
+    margin: 10px;
+    background-color: #B83ACC;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    
+}
+.incluir-despesas ul li img{
+    width: 25px;
+}
+.incluir-despesas ul li img:hover{
+    transform: scale(1.1);
+}
+.listContas {
+    overflow: overlay;
+}
+
+
+.value{
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+}
